@@ -391,6 +391,12 @@
   filter: saturate(250%) hue-rotate(110deg) contrast(50%) blur(2px);
 }
 
+.save-button {
+  gap: 8px;
+  min-inline-size: 339px;
+  min-block-size: 55px;
+}
+
 .button__save-wrapper {
   display: flex;
   justify-content: center;
@@ -434,6 +440,11 @@
   background-color: var(--themes-background, #fff);
   min-block-size: 192px;
   min-inline-size: 356px;
+}
+
+.dialog__button {
+  inline-size: 100%;
+  min-block-size: 39px;
 }
 
 .dialog::backdrop {

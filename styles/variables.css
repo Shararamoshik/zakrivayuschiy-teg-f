@@ -10,4 +10,8 @@
   --themes-background: #fff;
   --gradient-first-color: #e7e7e7;
   --gradient-second-color: #1a1a1a;
+  --heart-contour: #000;
+	--heart-fill: #ff0000;
+	--heart-fill-hover: #000;
+	--heart-sparks: #ff0000;
 }

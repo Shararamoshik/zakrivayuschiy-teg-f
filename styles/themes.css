@@ -13,6 +13,9 @@
   --button-color: #fff;
   --font-accent-weight: 700;
   --font-main-weight: 400;
+  --heart-fill-hover: #000;
+  --heart-contour: #000;
+	--heart-fill: #FF0000;
 }
 
 :root.theme-dark {
@@ -24,6 +27,9 @@
   --button-color: #00cc14;
   --font-accent-weight: 785;
   --font-main-weight: 465;
+  --heart-contour: #00CC14;
+	--heart-fill: #FF0000;
+  --heart-fill-hover: #00CC14;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -36,5 +42,9 @@
     --button-color: #00cc14;
     --font-accent-weight: 785;
     --font-main-weight: 465;
+    --heart-contour: #00CC14;
+		--heart-fill: #FF0000;
+		--blend-text-color: #00CC14;
+		--heart-fill-hover: #00CC14;
   }
 }

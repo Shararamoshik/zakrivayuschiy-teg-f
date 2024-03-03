@@ -88,6 +88,7 @@
   line-height: 14px;
   text-transform: uppercase;
   background-color: transparent;
+  transition: 0.3s ease;
 }
 
 .theme-menu__button::after {
@@ -99,8 +100,8 @@
   transform: scaleX(0);
   transform-origin: left;
   block-size: 2px;
-  top: 0px;
-  left: 0px;
+  top: 14px;
+  left: 4px;
   inline-size: 88%;
   inset-block-end: -2px;
 }
@@ -108,7 +109,7 @@
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
-  left: -18px;
+  left: -14px;
   top: 0px;
   animation: 0.5s ease-in-out infinite alternate arrow-move;
 }
@@ -119,7 +120,6 @@
 
 .theme-menu__button:focus-visible::before {
   opacity: 0.6;
-  transition: 0.3s ease;
   transform: scale(1);
   transform-origin: 0%;
 }
@@ -132,7 +132,6 @@
 .theme-menu__button:hover,
 .theme-menu__button:disabled {
   opacity: 0.6;
-  transition: 0.3s ease;
 }
 
 .theme-menu__button:focus {
@@ -234,7 +233,7 @@
   font-size: 14px;
   line-height: 90%;
   background-color: var(--themes-background, #fff);
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease;
 }
 
 .button:before {
@@ -268,7 +267,6 @@
 .button:focus-visible {
   box-shadow: 2px 2px var(--themes-main-color, #000);
   color: var(--themes-main-color, #000);
-  transition: 0.3s ease;
 }
 
 .button__text {

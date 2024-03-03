@@ -18,20 +18,22 @@
 
 .core {
   fill: transparent;
-  transition: fill 0.3s 0.03s;
+  transition: fill 0.3s 0.03s  linear;
 }
 
 .contour {
-  transition: fill 0.3s 0.06s;
+  fill: var(--themes-main-color);
+  transition: fill 0.1s linear;
 }
 
 .main-body {
   fill: transparent;
-  transition: fill 0.3s 0.05s;
+  transition: fill 0.3s 0.05s  linear;
 }
 
 .heart:hover .core {
   fill: var(--heart-fill-hover);
+  animation-delay: 0s;
 }
 
 .heart:hover .main-body {
@@ -46,29 +48,28 @@
   fill: var(--heart-fill);
 }
 
-.heart:active .contour {
-  fill: var(--heart-fill-hover);
-}
-
 .like-icon.is-liked .heart {
   transform-origin: center;
-  animation: like-heart 0.3s 0.1s ease-in;
+  animation: like-heart 0.3s 0.1s alternate ease-in;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--heart-fill);
+  transition: fill 0.3s linear 0.06s;
 }
 
 .like-icon.is-liked .main-body {
   fill: var(--heart-fill);
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .core {
   fill: var(--heart-fill);
+  transition: fill 0.3s linear 0s;
 }
 
 .like-icon.is-liked .sparks {
-  animation: like-heart-fill 0.3s 0.3s ease-in;
+  animation: like-heart-fill 0.3s 0.3s alternate ease-in;
 }
 
 @keyframes arrow-move {

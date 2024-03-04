@@ -42,6 +42,7 @@
 
 .heart:active .core {
   fill: var(--heart-fill);
+  animation-delay: 0s;
 }
 
 .heart:active .main-body {
